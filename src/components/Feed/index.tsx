@@ -76,7 +76,7 @@ export const Feed = () => {
               source={{ uri: `data:image/jpeg;base64,${item.imagem}` }}
             />
             <Description>
-              <Name>{item.autor.usuario}</Name> {item.descricao}
+              <Name>{item.autor.usuario} : </Name> {item.descricao}
             </Description>
           </Post>
         )}

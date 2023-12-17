@@ -41,13 +41,7 @@ export function StackRoutes() {
           headerShown: false,
         }}
       />
-      <Screen
-        name="createpublish"
-        component={CreatePublishScreen}
-        options={{
-          headerShown: false,
-        }}
-      />
+    
       <Screen
         name="OtherProfile"
         component={OtherProfileScreen}

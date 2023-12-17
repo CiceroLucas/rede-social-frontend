@@ -24,7 +24,7 @@ export const EditWindow = styled.View`
   border-top-right-radius: 30px;
 `;
 
-export const Buttons = styled.View`
+export const Buttons = styled.KeyboardAvoidingView`
   flex-direction: row;
   justify-content: space-around;
   margin-top: 20px;

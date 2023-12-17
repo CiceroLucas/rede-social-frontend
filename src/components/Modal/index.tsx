@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { View, Text, Modal, TouchableOpacity, TextInput } from "react-native";
+import { View, Text, Modal, TouchableOpacity, TextInput, Alert } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { deletePub, editPub } from "../../service/api";
 import {
@@ -33,12 +33,14 @@ const EditModal: React.FC<EditModalProps> = ({
   const [isEditing, setIsEditing] = useState(false);
   const [editedText, setEditedText] = useState(description || ""); // Inicializa com a descrição atual ou uma string vazia se for nula
   const navigation = useNavigation();
+  
 
   const deletePublish = () => {
     if (imageId) {
       deletePub(`foto/${imageId}`);
       console.log("Deletado com sucesso");
-      navigation.navigate("home");
+      Alert.alert("Deletado com sucesso.");
+      navigation.navigate("Home");
     }
   };
 
@@ -50,6 +52,7 @@ const EditModal: React.FC<EditModalProps> = ({
     console.log(imageId);
     editPub(`foto/${imageId}`, editedText);
     console.log("Editado com sucesso");
+    Alert.alert("Editado com sucesso.");
     setIsEditing(false);
   };
 

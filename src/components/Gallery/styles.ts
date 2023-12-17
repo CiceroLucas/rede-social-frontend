@@ -45,3 +45,4 @@ export const Description = styled.Text`
   padding: 15px;
   line-height: 18px;
 `;
+

@@ -36,7 +36,8 @@ const CameraPage: React.FC = () => {
         const photo = await cameraRef.current.takePictureAsync();
         console.log('Foto tirada:', photo);
         setIsCameraReady(false); // Define como falso após tirar uma foto
-        navigation.navigate('createpublish', { photo });
+        
+        navigation.navigate('CreatePublish', { photo });
       } catch (error) {
         console.error('Erro ao tirar a foto:', error);
       }

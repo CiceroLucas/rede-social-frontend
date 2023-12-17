@@ -79,8 +79,8 @@ const CreatePublish: React.FC = () => {
         // Limpa os estados após o envio
         setImage(null);
         setDescription("");
+        navigation.navigate("Profile");
       }
-      navigation.navigate('home')
     } catch (error) {
       console.error("Erro ao enviar", error);
     }

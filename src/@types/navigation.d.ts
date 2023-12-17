@@ -3,11 +3,11 @@ export declare global {
   namespace ReactNavigation {
     interface RootParamList {
       login: undefined;
-      home: undefined;
+      Home: undefined;
       registro: undefined;
-      profile: undefined;
+      Profile: undefined;
       editprofile: undefined;
-      createpublish: { photo: CameraCapturedPicture | undefined };
+      CreatePublish: { photo: CameraCapturedPicture | undefined };
       OtherProfile: { userId: string }; 
     }
   }
